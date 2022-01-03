@@ -24,6 +24,6 @@ app.use('/hello',(req,res)=>{
     res.send("ekk")
 })
 
-app.listen(5000,()=>{
-    console.log("Listining on port 5000");
+app.listen(process.env.PORT,()=>{
+    console.log("Listining on port " + process.env.PORT);
 })
